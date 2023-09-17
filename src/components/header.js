@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Label } from "@/components/ui/label";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <main>
       <header className="flex justify-between p-4  text-white">
@@ -18,7 +18,7 @@ export default function Header() {
           </a>
           <div className="relative">
             <Avatar>
-              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarImage src={props.pfp} />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
