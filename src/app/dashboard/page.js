@@ -21,7 +21,7 @@ import { Label } from "@/components/ui/label";
 import axios from "axios";
 
 export default function Dashboard() {
-  const url = "http://localhost:8000";
+  const url = "https://backend.walletban.xyz";
   const [title, setTitle] = useState("Benro's Project");
   const [pfp, setPfp] = useState("https://github.com/shadcn.png");
   const [credentials, setCredentials] = useState([
